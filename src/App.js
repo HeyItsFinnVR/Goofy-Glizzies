@@ -4,6 +4,9 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -271,6 +274,15 @@ function App() {
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   Excluding gas fees.
+                </s.TextDescription>
+                <s.SpacerSmall />
+                <Router>
+                <Link to="/about">About</Link>
+                </Router>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  Goofy Glizzies
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
