@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<base href="/" />
-	<link rel="icon" href="favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="#000000" />
-	<link rel="stylesheet" href="config/theme.css" />
-	<link rel="apple-touch-icon" href="logo192.png" />
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-	<!--
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="config/theme.css" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -20,18 +19,211 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-	<title>About Goofy Glizzies</title>
-	<meta name="description" content="Mint your Glizzy themed NFT" />
-	<style>
-	</style>
-</head>
+    <title>About Goofy Glizzies</title>
+    <meta name="description" content="Mint your Glizzy themed NFT" />
+    <style>
+      body {
+        margin: 0;
+      }
+      .height-100 {
+        min-height: 100vh;
+        padding: 24px;
+        max-width: 85%;
+        margin: 0 auto;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-center {
+        align-items: center;
+        justify-content: center;
+      }
+      .coloumn {
+        flex-direction: column;
+      }
+      .glizzy {
+        max-width: 300px;
+        box-shadow: 0px 5px 11px 2px rgb(0 0 0 / 70%);
+        border: 4px dashed var(--secondary);
+        background-color: var(--accent);
+        border-radius: 100%;
+        -webkit-transition: width 0.5s;
+        transition: width 0.5s;
+        flex: 1;
+        top: 24px;
+        position: sticky;
+      }
+      .center-box {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+        width: 100%;
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+      }
+      .p-text {
+        color: var(--accent-text);
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+      .gap-20 {
+        gap: 3vw;
+      }
+      @media (max-width: 768px) {
+        .flex-mobile {
+          flex-direction: column;
+          align-items: center;
+        }
+        img {
+          max-width: 100%;
+        }
+        img.glizzy {
+          max-width: 150px;
+        }
+      }
+    </style>
+  </head>
 
-<body>
-  <img src="/config/images/logo.png" alt="About" width="500px">
-	<img src="/config/images/about.png" alt="About" width="300px">
-    <div class="sc-jSgvzq fQseeQ" style="background-color: var(--accent); padding: 24px; border-radius: 24px; border: 4px dashed var(--secondary); box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 11px 2px;">
-    <h1 class="sc-fubCzh hohBlo" style="text-align: center; color: var(--accent-text);">
-    This page is not complete yet, we are hiring a web developer :)  </h1>
+  <body>
+    <div class="height-100 flex coloumn flex-center">
+      <div class="flex coloumn flex-center">
+        <img src="/config/images/logo.png" alt="About" width="600px" />
+        <img src="/config/images/about.png" alt="About" width="300px" />
+      </div>
+      <div class="flex gap-20 flex-mobile">
+        <div>
+          <img alt="glizzy" src="/config/images/example.gif" class="glizzy" />
+        </div>
+        <div class="center-box flex coloumn flex-center">
+          <!-- box start -->
+          <div
+            style="
+              background-color: var(--accent);
+              padding: 24px;
+              margin-bottom: 24px;
+              border-radius: 24px;
+              border: 4px dashed var(--secondary);
+              box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 11px 2px;
+            "
+          >
+            <h1
+              class="sc-fubCzh hohBlo"
+              style="
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                margin-bottom: 24px;
+                color: var(--accent-text);
+              "
+            >
+              Title
+            </h1>
+            <p class="p-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              provident? exercitationem itaque, iste voluptatum voluptates eos
+              reprehenderit laborum nostrum accusamus quia nam ipsum doloremque?
+              Beatae, ex iste.
+            </p>
+          </div>
+          <!-- box end -->
+          <!-- box start -->
+          <div
+            style="
+              background-color: var(--accent);
+              padding: 24px;
+              border-radius: 24px;
+              margin-bottom: 24px;
+              border: 4px dashed var(--secondary);
+              box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 11px 2px;
+            "
+          >
+            <h1
+              style="
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                color: var(--accent-text);
+              "
+            >
+              Title
+            </h1>
+            <p class="p-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              provident? Est quae cumque exercitationem itaque, iste voluptatum
+              voluptates eos reprehenderit laborum nostrum accusamus quia nam
+              ipsum doloremque? Beatae, ex iste.
+            </p>
+          </div>
+          <!-- box end --><!-- box start -->
+          <div
+            style="
+              background-color: var(--accent);
+              padding: 24px;
+              margin-bottom: 24px;
+              border-radius: 24px;
+              border: 4px dashed var(--secondary);
+              box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 11px 2px;
+            "
+          >
+            <h1
+              class="sc-fubCzh hohBlo"
+              style="
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                color: var(--accent-text);
+              "
+            >
+              Title
+            </h1>
+            <p class="p-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              provident? Est quae cumque exercitationem itaque, iste voluptatum
+              voluptates eos reprehenderit laborum nostrum accusamus quia nam
+              ipsum doloremque? Beatae, ex iste.
+            </p>
+          </div>
+          <!-- box end -->
+          <!-- box start -->
+          <div
+            style="
+              background-color: var(--accent);
+              padding: 24px;
+              margin-bottom: 24px;
+              border-radius: 24px;
+              border: 4px dashed var(--secondary);
+              box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 11px 2px;
+            "
+          >
+            <h1
+              class="sc-fubCzh hohBlo"
+              style="
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                color: var(--accent-text);
+              "
+            >
+              Title
+            </h1>
+            <p class="p-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              provident? Est quae cumque exercitationem itaque, iste voluptatum
+              voluptates eos reprehenderit laborum nostrum accusamus quia nam
+              ipsum doloremque? Beatae, ex iste.
+            </p>
+          </div>
+          <!-- box end -->
+        </div>
+        <div>
+          <img alt="glizzy" src="/config/images/example.gif" class="glizzy" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
