@@ -276,7 +276,7 @@ function App() {
                   Excluding gas fees.
                 </s.TextDescription>
                 <s.SpacerSmall />
-                <a href="about.html">About</a>
+                <a href="about.html" class="button">ABOUT</a>
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
