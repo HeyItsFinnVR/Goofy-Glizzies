@@ -77,6 +77,15 @@ export const StyledLogo = styled.img`
   transition: height 0.5s;
 `;
 
+export const StyledImg2 = styled.img`
+  width: 300px;
+  @media (min-width: 767px) {
+    width: 1200px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
   border: 4px dashed var(--secondary);
@@ -388,6 +397,7 @@ function App() {
             />
           </s.Container>
         </ResponsiveWrapper>
+
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription
@@ -410,10 +420,27 @@ function App() {
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
-          </s.TextDescription>
-        </s.Container>
-      </s.Container>
-    </s.Screen>
+         </s.TextDescription>
+       </s.Container>
+      <s.SpacerMedium />
+      <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+        <s.Container
+          flex={2}
+          jc={"center"}
+          ai={"center"}
+          style={{
+            backgroundColor: "var(--accent)",
+            padding: 24,
+            borderRadius: 24,
+            border: "4px dashed var(--secondary)",
+            boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+          }}
+            >
+            <StyledImg2 alt={"Roadmap"} src={"/config/images/roadmap.png"} />
+          </s.Container>
+        </ResponsiveWrapper>
+     </s.Container>
+   </s.Screen>
   );
 }
 

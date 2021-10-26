@@ -40,3 +40,6 @@ box-shadow: none;
 }
 
 
+body {
+    font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
